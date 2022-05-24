@@ -52,7 +52,7 @@ func main() {
 	}
 	fmt.Print("Split: ")
 
-	//For loop calculating gallons per person and outpu
+	//For loop calculating gallons per person and output
 	for i, person := range people {
 		person.gallons = (float64(person.dollars) / float64(dTot)) * gTot
 		fmt.Printf("\n\t(%d) %s = %.2fg ", i+1, person.name, person.gallons)
