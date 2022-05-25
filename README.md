@@ -8,10 +8,10 @@
 4. GoLang
 5. PowerShell
 6. Java
+7. C++
 ### Languages of Future Implementations
 1. Batch
 2. Bash
-3. C++ 
 4. C
 5. x86 ASM
 6. ARM
