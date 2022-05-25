@@ -1,23 +1,17 @@
-;              ll
-;              ll   ii
-;     CCCCC    ll   ii
-;    CC        ll
-;   C          ll
-;  CC          ll   ii   ppppppp     ssssss
-; CC           ll   ii   pp    pp   ss
-; CC           ll   ii   pp     pp  ss
-; CC           ll   ii   pp     pp  sss
-; CC           ll   ii   pp     pp   ssss
-; CC           ll   ii   pp     pp     sss
-;  CC          ll   ii   pp     pp       ss
-;  CCC         ll   ii   pp    pp        ss
-;   CCC        ll   ii   pp    pp   s    ss
-;     CCCCCC   ll   ii   ppppppp    ssssss
-;                        pp
-;                        pp
-;                        pp
-;                        pp
-;                        pp
+;      xxxxx  x xxxxxx      xxxxxxxxxxxxxxx      xxx  x  
+;     xx    xxx   xx          xx    xx    xx    xx  xxx  
+;    x       xx   xx          xx    xx     xx  xx    xx  
+;   xx       xx   xx          xx    xx     xx  xx     x  
+;  xx         x   xx          xx    xx     xx  xxx    x  
+;  xx             xx          xx    xx     xx   xxx      
+;  xx             xx          xx    xx    xx     xxxx    
+;  xx             xx          xx    xxxxxxx        xxx   
+;  xx             xx          xx    xx              xxx  
+;  xx             xx          xx    xx         x     xxx 
+;   xx        x   xx       x  xx    xx         x      xx 
+;   xx       x    xx      xx  xx    xx         xx     xx 
+;    xxx    x     xx     xx   xx    xx         xxx   xx  
+;      xxxxx    xxxxxxxxxxx xxxxxxxxxxxx       x  xxxx   
 ; Ice Cream Split Program
 ; People are represented with template
 ; (reset) upon start, then (run)
