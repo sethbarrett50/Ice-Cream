@@ -1,3 +1,22 @@
+#                             xx                            
+# xxxxxxxxx                  xxx                            
+#   xx    xx             x    xx                            
+#   xx     xx           xx    xx                            
+#   xx     xx           xx    xx                            
+#   xx     xx xxxx  xxxxxxxx  xx  xxx      xxx     xx  xxx  
+#   xx     xx xxx    x  xx    xxxx  xx   xx  xxx  xxxxx  xx 
+#   xx    xx   xx    x  xx    xx    xx   x    xx   xx    xx 
+#   xxxxxxx     xx  x   xx    xx    xx  xx     xx  xx    xx 
+#   xx          xx  x   xx    xx    xx  xx     xx  xx    xx 
+#   xx          xx  x   xx    xx    xx  xx     xx  xx    xx 
+#   xx           xxx    xx    xx    xx  xx     xx  xx    xx 
+#   xx           xxx    xx    xx    xx   xx    x   xx    xx 
+#   xx            xx    xx  x xx    xx   xx   xx   xx    xx 
+# xxxxxx          x      xxx xxxx  xxxx   xxxx    xxxx  xxxx
+#                 x                                         
+#                x                                          
+#             xxxx                                          
+#             xxx                                           
 # Ice Cream Split Up Calculator
 def IceCreamSplitUp():
     print( "Welcome to Ice Cream Split Up Calculator! How many people are contributing?" )

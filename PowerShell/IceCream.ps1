@@ -1,3 +1,18 @@
+#                                                                   xx                  xx    xx  
+# xxxxxxxxx                                                xxx  x  xxx                 xxx   xxx  
+#   xx    xx                                              xx  xxx   xx                  xx    xx  
+#   xx     xx                                            xx    xx   xx                  xx    xx  
+#   xx     xx                                            xx     x   xx                  xx    xx  
+#   xx     xx     xxx    xxxx  xxxx  xxx   xxxx   xx xxx xxx    x   xx  xxx     xxxx    xx    xx  
+#   xx     xx   xx  xxx   xx    xx    x   xx  xx xxxx xx  xxx       xxxx  xx   xx  xx   xx    xx  
+#   xx    xx    x    xx   xx    xx    x  xx    xx xx       xxxx     xx    xx  xx    xx  xx    xx  
+#   xxxxxxx    xx     xx   xx   xxx  x   xxxxxxxx xx         xxx    xx    xx  xxxxxxxx  xx    xx  
+#   xx         xx     xx   xx  x xx  x   xx       xx          xxx   xx    xx  xx        xx    xx  
+#   xx         xx     xx   xx  x xx x    xx       xx     x     xxx  xx    xx  xx        xx    xx  
+#   xx         xx     xx    xxx   xxx    xx       xx     x      xx  xx    xx  xx        xx    xx  
+#   xx          xx    x     xxx   xxx    xxx    x xx     xx     xx  xx    xx  xxx    x  xx    xx  
+#   xx          xx   xx     xx    xx      xxxxxx  xx     xxx   xx   xx    xx   xxxxxx   xx    xx  
+# xxxxxx         xxxx        x     x       xxxx  xxxx    x  xxxx   xxxx  xxxx   xxxx   xxxx  xxxx 
 Write-Host "Ice Cream Split Up Calculator"
 
 $peeps = New-Object System.Collections.ArrayList
