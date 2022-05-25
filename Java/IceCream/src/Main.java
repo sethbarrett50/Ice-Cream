@@ -16,7 +16,6 @@ public class Main {
         System.out.println("Ice Cream Split Up Calculator");
         Scanner in = new Scanner(System.in);
         ArrayList<Persons> peeps = new ArrayList<Persons>();
-        int _cashTotal = 0;
         int numPpl;
         System.out.println("Please enter the number of people contributing:");
         numPpl = Integer.parseInt(in.nextLine());
@@ -28,14 +27,13 @@ public class Main {
             System.out.println("How many dollars is " + peeps.get(i).GetName() + " contributing?");
             pCash = Integer.parseInt(in.nextLine());
             peeps.get(i).SetCash(pCash);
-            _cashTotal += peeps.get(i).GetCash();
         }
         int _gallonsG;
         System.out.println("How many gallons total are you getting?");
         _gallonsG = Integer.parseInt(in.nextLine());
         System.out.println("Ice Cream Split Up:");
         for (int i = 0; i < numPpl; i++)
-            System.out.println(peeps.get(i).GetName() + " gets " + peeps.get(i).FindPortion(_gallonsG, _cashTotal) + " gallons.");
+            System.out.println(peeps.get(i).GetName() + " gets " + peeps.get(i).FindPortion(_gallonsG) + " gallons.");
         System.out.println("Press enter to end the program;");
         String end = in.nextLine();
     }
@@ -44,21 +42,20 @@ public class Main {
 
 class Persons
 {
-    private static int count = 0;
+    private static int cashTotal = 0;
     private String name;
     public String GetName() {return name;}
     public void SetName(String nameP) {name = nameP;}
     private int cash;
     public int GetCash() { return cash;}
-    public void SetCash(int cashP) { cash = cashP;}
+    public void SetCash(int cashP) { cash = cashP; cashTotal += cashP;}
 
     public Persons(String Name)
     {
         name = Name;
-        count++;
     }
-    public float FindPortion(int gallonG, int cashT)
+    public float FindPortion(int gallonG)
     {
-        return ((float)(cash) / (float)(cashT)) * (float)gallonG;
+        return ((float)(cash) / (float)(cashTotal)) * (float)gallonG;
     }
 }
