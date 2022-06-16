@@ -1,4 +1,4 @@
-# Ice-Cream
+# Ice Cream
 ## I scream, you scream, we all scream for ice cream!!!
 ### This is where I implement my basic ice cream sharing program in any new languages I learn.  Each folder is named the language in which the program is wrote
 ### Currently Implemented Languages
@@ -12,7 +12,7 @@
 ### Languages of Future Implementations
 1. Batch
 2. Bash
-4. C
-5. x86 ASM
-6. ARM
-7. Javascript
+3. C
+4. x86 ASM
+5. ARM
+6. Javascript
