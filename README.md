@@ -10,6 +10,7 @@
 6. Java
 7. C++
 8. Kotlin
+9. Racket
 ### Languages of Future Implementations
 1. Batch
 2. Bash
