@@ -17,10 +17,10 @@
 12. Bash
 13. Haskell
 14. Dyalog APL
+15. JavaScript
 ### Languages of Future Implementations
 1. Batch
 2. ARM
-3. JavaScript
 4. TypeScript
 5. Rust
 6. Nim
