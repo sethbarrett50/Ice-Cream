@@ -17,5 +17,19 @@
 12. Bash
 ### Languages of Future Implementations
 1. Batch
-5. ARM
-6. Javascript
+2. ARM
+3. JavaScript
+4. TypeScript
+5. Rust
+6. Nim
+7. R
+8. PHP
+9. Ruby
+10. Basic
+11. Scratch
+12. Swift
+13. Smalltalk
+14. Common Lisp
+15. Scheme
+16. Perl
+17. Haskell
