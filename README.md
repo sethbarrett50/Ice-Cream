@@ -17,6 +17,5 @@
 1. Batch
 2. Bash
 3. C
-4. x86 ASM
 5. ARM
 6. Javascript
