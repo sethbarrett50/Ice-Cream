@@ -15,6 +15,8 @@
 10. 32-bit x86 Assembly 
 11. C
 12. Bash
+13. Haskell
+14. Dyalog APL
 ### Languages of Future Implementations
 1. Batch
 2. ARM
@@ -32,4 +34,3 @@
 14. Common Lisp
 15. Scheme
 16. Perl
-17. Haskell
