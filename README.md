@@ -38,4 +38,6 @@ Future implementations of the program will include:
 - Scheme
 - Perl
 
-This repository is licensed under the "No Derivatives" license, which allows users to fork and use the repository, but they are not allowed to make any changes or modifications to the original work.
+## License
+
+This project is licensed under the Unlicense. This means that you are free to use, modify, and distribute the work, even for commercial purposes, without the need to provide attribution. For more information, see the full text of the Unlicense in the License file.
