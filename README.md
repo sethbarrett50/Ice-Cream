@@ -1,36 +1,41 @@
-# Ice Cream
-## I scream, you scream, we all scream for ice cream!!!
-### This is where I implement my basic ice cream sharing program in any new languages I learn.  Each folder is named the language in which the program is wrote
-#### The program asks for the number of users who are all contributing to the ice cream fund, then collects how much each user is contributing and the total number of gallons of ice cream aquired, then calculates how many gallons of ice cream each person is to recieve based on their individual contribution comparaed to the total number of gallons acquired, and prints this to the screen.
-### Currently Implemented Languages
-1. C#
-2. CLIPS
-3. Python
-4. GoLang
-5. PowerShell
-6. Java
-7. C++
-8. Kotlin
-9. Racket
-10. 32-bit x86 Assembly 
-11. C
-12. Bash
-13. Haskell
-14. Dyalog APL
-15. JavaScript
-16. TypeScript
-### Languages of Future Implementations
-1. Batch
-2. ARM
-5. Rust
-6. Nim
-7. R
-8. PHP
-9. Ruby
-10. Basic
-11. Scratch
-12. Swift
-13. Smalltalk
-14. Common Lisp
-15. Scheme
-16. Perl
+# Ice Cream Sharing Program
+
+Welcome to my repository containing an ice cream sharing program implemented in various programming languages. 
+
+The program prompts the user for the number of people contributing to the ice cream fund, collects the individual contribution amounts, and calculates the total number of gallons of ice cream acquired. It then calculates the number of gallons each person is entitled to based on their contribution relative to the total, and prints this information to the screen. 
+
+Currently, the program has been implemented in the following languages:
+- C#
+- CLIPS
+- Python
+- GoLang
+- PowerShell
+- Java
+- C++
+- Kotlin
+- Racket
+- 32-bit x86 Assembly
+- C
+- Bash
+- Haskell
+- Dyalog APL
+- JavaScript
+- TypeScript
+
+Future implementations of the program will include:
+- Batch
+- ARM
+- Rust
+- Nim
+- R
+- PHP
+- Ruby
+- Basic
+- Scratch
+- Swift
+- Smalltalk
+- Common Lisp
+- Scheme
+- Perl
+
+This repository is licensed under the "No Derivatives" license, which allows users to fork and use the repository, but they are not allowed to make any changes or modifications to the original work.
