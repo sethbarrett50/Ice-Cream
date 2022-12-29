@@ -39,6 +39,7 @@ Future implementations of the program will include:
 - Perl
 - awk
 - sed
+- tex
 
 ## License
 
