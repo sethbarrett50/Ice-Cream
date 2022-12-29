@@ -37,6 +37,8 @@ Future implementations of the program will include:
 - Common Lisp
 - Scheme
 - Perl
+- awk
+- sed
 
 ## License
 
