@@ -18,7 +18,37 @@
 #             xxxx                                          
 #             xxx                                           
 # Ice Cream Split Up Calculator
-from collections import namedtuple
+class Peep:
+    total_dollars = 0.0
+    total_gals = 0.0
+
+    def __init__(self):
+        self._name = ""
+        self._dols = 0.0
+
+    def __str__(self) -> str:
+        return f'{self.name} gets {self.gals} gallons'
+
+    @property
+    def name(self) -> str:
+        return self._name
+    
+    @name.setter
+    def name(self, name:str) -> None:
+        self._name = name
+
+    @property
+    def dols(self) -> float:
+        return self._dols
+    
+    @dols.setter
+    def dols(self, dols:float) -> None:
+        self._dols = dols
+        Peep.total_dollars += dols
+
+    @property
+    def gals(self) -> float:
+        return (self.dols / Peep.total_dollars) * Peep.total_gals if Peep.total_gals > 0 else 0
 
 def userInputValidation(quest:str, convType=int):
     while True:
@@ -31,35 +61,15 @@ def main():
     numPeeps = userInputValidation(
         "Welcome to Ice Cream Split Up Calculator!\nEnter the number of people are contributing: "
     )
-    Peep = namedtuple("Peep", ["name", "dollars", "gals"])
+    peeps = []
+    for i in range(0, numPeeps):
+        newPeep = Peep()
+        newPeep.name = userInputValidation(f"Please enter person {i + 1}'s name: ", str)
+        newPeep.dols = userInputValidation(f"Please enter how many dollars {newPeep.name} is contributing: $", float)
+        peeps.append(newPeep)
     
-    totalGals = userInputValidation("Enter the number of gallons total are you getting: ", float)
-
-    def createPeep(i:int) -> Peep:
-        return Peep(
-            name=userInputValidation(f'Hello person {i}, enter your name: ', str), 
-            dollars=userInputValidation(
-                f'Enter how much are you contributing: $', float
-            ),
-            gals=0
-        )
-    individuals = tuple(map(createPeep, range(1, numPeeps + 1)))
-
-    totalDollars = sum(p.dollars for p in individuals)
-    
-    totalPeep = Peep(name="Total", dollars=totalDollars, gals=totalGals)
-
-    determineGals = lambda peepDollar, totalDollar, totalGals: (peepDollar / totalDollar) * totalGals if totalGals > 0 else 0
-
-    updatedIndividuals = tuple(
-        p._replace(gals=determineGals(p.dollars, totalDollars, totalGals))
-        for p in individuals
-    )
-    
-    peeps = (totalPeep,) + updatedIndividuals
-    
-    for p in peeps:
-        print(f'{p.name} gets {p.gals:.2f}')
+    Peep.total_gals = userInputValidation(f"Please enter the total number of gallons acquired: ", float)
+    print('\n'.join(map(str, peeps)))
 
 if __name__ == '__main__':
     main()

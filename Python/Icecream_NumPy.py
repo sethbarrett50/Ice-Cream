@@ -46,7 +46,7 @@ def main():
 
     peeps[1, 0] = userInputValidation("Enter the number of gallons total are you getting: ", float)
 
-    peeps[1, 1:] = (peeps[0, 1:] / peeps[0, 0]) * peeps[1, 0]
+    peeps[1, 1:] = (peeps[0, 1:] / peeps[0, 0]) * peeps[1, 0] if peeps[1,0] > 0 else 0
 
     for name, gals in zip(peepNames[1:], peepNames[1, 1:]):
         print( f"{name} gets {gals} gallons" )
