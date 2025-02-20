@@ -1,0 +1,88 @@
+# General system files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+build/
+dist/
+.eggs/
+*.egg-info/
+
+# C, C++, and 32bitx86ASM
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+
+# C#
+[Bb]in/
+[Oo]bj/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+target/
+
+# GoLang
+/bin/
+/pkg/
+
+# Julia
+*.ji
+.julia/
+
+# Haskell
+.stack-work/
+*.hi
+*.o
+
+# JavaScript & TypeScript
+node_modules/
+dist/
+build/
+
+# Kotlin (similar to Java)
+*.class
+*.jar
+/build/
+.idea/
+.gradle/
+
+# PowerShell
+*.psd1
+*.psm1
+*.ps1
+
+# Bash
+*.swp
+*.swo
+
+# CLIPS
+# (Add any CLIPS-specific temporary or compiled file extensions if needed)
+*.clp
+
+# DyalogAPL
+# (Adjust the extension below if your DyalogAPL environment produces other artifacts)
+*.dws
+
+# Racket
+compiled/
+rkt-cache/
+
+# (Do not ignore License and README.md files)

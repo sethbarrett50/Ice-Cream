@@ -18,35 +18,38 @@
 #             xxxx                                          
 #             xxx                                           
 # Ice Cream Split Up Calculator
-def IceCreamSplitUp():
-    print( "Welcome to Ice Cream Split Up Calculator! How many people are contributing?" )
-    numPeeps = int( input( ) )
+import numpy as np
 
-    # First list inside is names, second is $, third is gallons
-    peeps = [ [ "Total" ] ,[ 0 ] , [ 0 ] ]
-
-    # Peeps input
-    i = 1
-    while i <= numPeeps:
-        peeps[ 0 ].append( input( f'Hello person { i }, what is your name?\n' ) )
-        peeps[ 1 ].append( int( input( f'How much are you contributing, { peeps[ 0 ][ i ] }?\n' ) ) )
-        peeps[ 1 ][ 0 ] += peeps[ 1 ][ i ]
-        i += 1
-
-    # Gallon total input
-    print( "How many gallons total are you getting?" )
-    peeps[ 2 ][ 0 ] = int( input( ) )
-
-    # Gallon/peep output
-    i = 1
-    while i <= numPeeps:
-        peeps[ 2 ].append( ( peeps[ 1 ][ i ] / peeps[ 1 ][ 0 ] ) * peeps[ 2 ][ 0 ] )
-        print( f"{ peeps[ 0 ][ i ] } gets { peeps[ 2 ][ i ] } gallons\n" )
-        i += 1
+def userInputValidation(quest:str, convType=int):
+    while True:
+        try: 
+            return convType(input(quest))
+        except ValueError:
+            print(f"Please enter a {convType} input!")
 
 def main():
-    IceCreamSplitUp()
+    numPeeps = userInputValidation(
+        "Welcome to Ice Cream Split Up Calculator!\nEnter the number of people are contributing: "
+    )
 
+    peeps = np.zeros((2, numPeeps + 1)) # First array inside is $, second is gallons
+    peepNames = np.empty(numPeeps + 1, dtype='<U20')
+    peepNames[0] = "Total"  # First column in both arrays is reserved for totals
 
-if __name__ == '__main__':
+    for i in range(1, numPeeps + 1):
+        peepNames[i] = userInputValidation(f'Hello person {i}, enter your name: ', str)
+        peeps[0, i]= userInputValidation(
+            f'Enter how much are you contributing, {peepNames[i]}: $',
+            float
+        )
+    peeps[0, 0] = np.sum(peeps[0, 1:])
+
+    peeps[1, 0] = userInputValidation("Enter the number of gallons total are you getting: ", float)
+
+    peeps[1, 1:] = (peeps[0, 1:] / peeps[0, 0]) * peeps[1, 0]
+
+    for name, gals in zip(peepNames[1:], peepNames[1, 1:]):
+        print( f"{name} gets {gals} gallons" )
+
+if __name__ == "__main__":
     main()
